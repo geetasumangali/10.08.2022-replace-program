@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+	int n,r,t,sum=0;
+	scanf("%d",&n);
+	t=n;
+	while(n>0)
+	{
+		r=n%10;
+		sum=sum+r;
+		n=n/10;
+    }
+	if(t%sum==0)
+	 printf( "Harshad Number");
+	else
+	 printf(" Not Harshad Number");
+    return(0);
+}
+***********
+output:-
+test case 1:-
+156
+Harshad Number
+test case 2:-
+22
+ Not Harshad Number
